@@ -375,6 +375,7 @@ footer{
       <a href="#security">Security</a>
       <a href="#creator">Creator Tools</a>
       <a href="#demo">Live Demo</a>
+      <a href="#research">Research</a>
       <a href="#pricing">Pricing</a>
       <a href="#oss">Open Source</a>
       <a href="#demo" class="nav-cta">Try Scanner →</a>
@@ -521,6 +522,52 @@ footer{
       <div class="stat-cell">
         <div class="stat-num">99.7<span class="unit">%</span></div>
         <div class="stat-label">Uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESEARCH ═══ -->
+<section class="research" id="research" style="padding:80px 0;border-top:1px solid var(--border)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="section-tag red">◆ RESEARCH</div>
+      <h2 class="section-title reveal">Published Security Research</h2>
+      <p class="section-desc reveal" style="margin:0 auto">Original research exposing real threats in the AI agent ecosystem.</p>
+    </div>
+    <div class="reveal" style="max-width:800px;margin:0 auto;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:32px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--cyan))"></div>
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:16px">
+        <div style="flex:1;min-width:280px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <span style="background:var(--red-dim);color:var(--red);padding:4px 10px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.5px">LOBSEC-2026-001</span>
+            <span style="color:var(--text3);font-size:13px">February 3, 2026</span>
+          </div>
+          <h3 style="font-size:22px;color:#fff;margin-bottom:10px;font-weight:700">ClawHub Ecosystem Security Audit</h3>
+          <p style="color:var(--text2);font-size:15px;line-height:1.7;margin-bottom:20px">Independent security audit of all ~2,800 skills on ClawHub — the largest agent skill marketplace. Found <strong style="color:var(--red)">487 malicious skills (17.4%)</strong>, including wallet drainers, prompt injections, backdoors, and supply chain attacks. 42.8% more detections than prior research.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+            <div style="text-align:center">
+              <div style="font-size:24px;font-weight:700;color:var(--red)">487</div>
+              <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">Malicious Skills</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:24px;font-weight:700;color:var(--cyan)">31</div>
+              <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">Detection Rules</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:24px;font-weight:700;color:var(--green)">6</div>
+              <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">Attack Categories</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:24px;font-weight:700;color:#fff">42.8%</div>
+              <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">More Than Prior Art</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="https://github.com/lobsec-security/clawhub-scanner" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--cyan);color:var(--bg);font-weight:600;border-radius:var(--radius-sm);font-size:14px;transition:transform .2s;text-decoration:none" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">View Scanner ↗</a>
+            <a href="https://github.com/lobsec-security/agentpwned" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:transparent;color:var(--cyan);font-weight:600;border-radius:var(--radius-sm);font-size:14px;border:1px solid var(--cyan-dim);transition:transform .2s;text-decoration:none" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">AgentPwned Database ↗</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
