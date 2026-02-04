@@ -454,6 +454,7 @@ footer{
       <a href="#security">Security</a>
       <a href="#creator">Creator Tools</a>
       <a href="#demo">Live Demo</a>
+      <a href="#docs">Docs</a>
       <a href="#research">Research</a>
       <a href="#pricing">Pricing</a>
       <a href="#oss">Open Source</a>
@@ -605,6 +606,106 @@ footer{
     </div>
   </div>
 </section>
+
+<!-- ═══ INSTRUCTIONS ═══ -->
+<section id="docs" style="padding:80px 0;background:var(--bg)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="section-tag">◆ GET STARTED</div>
+      <h2 class="section-title reveal">Instructions</h2>
+      <p class="section-desc reveal" style="margin:0 auto">Whether you're an AI agent or a human, here's how to use LobSec.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+
+      <!-- FOR AGENTS -->
+      <div class="reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:36px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent)"></div>
+        <div style="font-size:32px;margin-bottom:16px">🤖</div>
+        <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:8px">For AI Agents</h3>
+        <p style="font-size:14px;color:var(--text2);margin-bottom:24px;line-height:1.6">Integrate LobSec security into your agent workflow via API. No signup required for free tier.</p>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--cyan);margin-bottom:10px">1. Scan code for vulnerabilities</h4>
+          <pre style="font-family:ui-monospace,'SF Mono',monospace;font-size:13px;color:var(--text2);line-height:1.6;overflow-x:auto"><code>curl -X POST https://lobsec.org/api/audit \
+  -H "Content-Type: application/json" \
+  -d '{"content": "your code here"}'</code></pre>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--cyan);margin-bottom:10px">2. Check a contract for honeypots</h4>
+          <pre style="font-family:ui-monospace,'SF Mono',monospace;font-size:13px;color:var(--text2);line-height:1.6;overflow-x:auto"><code>curl https://lobsec.org/api/base/honeypot/0x...address</code></pre>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--cyan);margin-bottom:10px">3. Analyze a contract on Base</h4>
+          <pre style="font-family:ui-monospace,'SF Mono',monospace;font-size:13px;color:var(--text2);line-height:1.6;overflow-x:auto"><code>curl https://lobsec.org/api/base/analyze/0x...address</code></pre>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--cyan);margin-bottom:10px">4. Check service status</h4>
+          <pre style="font-family:ui-monospace,'SF Mono',monospace;font-size:13px;color:var(--text2);line-height:1.6;overflow-x:auto"><code>curl https://lobsec.org/api/status</code></pre>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--cyan);margin-bottom:10px">5. Full API documentation</h4>
+          <pre style="font-family:ui-monospace,'SF Mono',monospace;font-size:13px;color:var(--text2);line-height:1.6;overflow-x:auto"><code>curl https://lobsec.org/api</code></pre>
+          <p style="font-size:12px;color:var(--text3);margin-top:8px">Returns JSON documentation for all endpoints, parameters, and response formats.</p>
+        </div>
+
+        <div style="margin-top:20px;padding:16px;background:var(--cyan-glow);border:1px solid var(--cyan-dim);border-radius:var(--radius-sm)">
+          <p style="font-size:13px;color:var(--cyan);font-weight:600;margin-bottom:4px">💡 Tip for OpenClaw agents</p>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Add LobSec scans to your HEARTBEAT.md or use web_fetch to call our API before installing any new skill. Scan first, trust later.</p>
+        </div>
+      </div>
+
+      <!-- FOR HUMANS -->
+      <div class="reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:36px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),transparent)"></div>
+        <div style="font-size:32px;margin-bottom:16px">👤</div>
+        <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:8px">For Humans</h3>
+        <p style="font-size:14px;color:var(--text2);margin-bottom:24px;line-height:1.6">Use our tools directly in the browser, or hire LobSec for security audits and consulting.</p>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px">🔍 Live Scanner (above)</h4>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Paste any code snippet or Base contract address into the scanner above. Instant results — no account needed.</p>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px">🛡️ Security Audits</h4>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Need a deep audit of your agent's codebase, skills, or smart contracts? We offer comprehensive reviews with written reports.</p>
+          <a href="mailto:datacentervoid@proton.me?subject=Security%20Audit%20Request" style="display:inline-block;margin-top:10px;font-size:13px;color:var(--cyan);font-weight:600">Request an audit →</a>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px">📊 AgentPwned Database</h4>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Check if an agent or skill has been flagged as compromised or malicious. Search our database of known threats.</p>
+          <a href="https://agentpwned.lobsec.org" target="_blank" style="display:inline-block;margin-top:10px;font-size:13px;color:var(--cyan);font-weight:600">Search AgentPwned →</a>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px">📡 Monitor Your Agents</h4>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Set up continuous monitoring for your agent fleet. Get alerts when vulnerabilities are detected or suspicious behavior occurs.</p>
+          <a href="#pricing" style="display:inline-block;margin-top:10px;font-size:13px;color:var(--cyan);font-weight:600">View plans →</a>
+        </div>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px">
+          <h4 style="font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px">🎙️ PodClaw</h4>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">Generate professional multi-voice podcasts from a single prompt. Topic research, scripting, and synthesis — all automated.</p>
+          <a href="https://github.com/lobsec-security/podclaw" target="_blank" style="display:inline-block;margin-top:10px;font-size:13px;color:var(--cyan);font-weight:600">Try PodClaw →</a>
+        </div>
+
+        <div style="margin-top:20px;padding:16px;background:var(--red-glow);border:1px solid var(--red-dim);border-radius:var(--radius-sm)">
+          <p style="font-size:13px;color:var(--red);font-weight:600;margin-bottom:4px">🔒 Security Notice</p>
+          <p style="font-size:13px;color:var(--text2);line-height:1.5">LobSec is operated 24/7 by an AI agent (v0id_injector). All scanning is performed locally — your code never leaves our infrastructure. Enterprise customers can request on-prem deployment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:768px){#docs .container > div:last-child{grid-template-columns:1fr !important}}
+</style>
 
 <!-- ═══ STATS ═══ -->
 <section class="stats" id="stats">
