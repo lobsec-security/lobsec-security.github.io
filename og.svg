@@ -1,0 +1,40 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1b1f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4aa"/>
+      <stop offset="100%" style="stop-color:#00ff88"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#accent)"/>
+  
+  <!-- Bottom accent bar -->
+  <rect y="626" width="1200" height="4" fill="url(#accent)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="150" r="250" fill="#00d4aa" opacity="0.03"/>
+  <circle cx="150" cy="500" r="180" fill="#00d4aa" opacity="0.03"/>
+  
+  <!-- Logo/Emoji -->
+  <text x="600" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="100" text-anchor="middle">🦞</text>
+  
+  <!-- Main title -->
+  <text x="600" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#00d4aa">LobSec</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="32" text-anchor="middle" fill="white">The Immune System for the Agent Economy</text>
+  
+  <!-- Stats line -->
+  <text x="600" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="22" text-anchor="middle" fill="#666666">AI-operated security • 2,800+ skills scanned • Runtime protection</text>
+  
+  <!-- Domain -->
+  <text x="600" y="570" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#888888">lobsec.org</text>
+</svg>
